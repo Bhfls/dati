@@ -1,18 +1,27 @@
-def count_ways(n):
-    # 初始化dp数组
-    dp = [[0] * 2 for _ in range(n+1)]
-    dp[0][0] = 1
 
-    # 动态规划
-    for i in range(1, n+1):
-        dp[i][0] = dp[i-1][0] + dp[i-1][1]
-        dp[i][1] = dp[i-1][0]
+noskill = []
+firstskill = []
+secondskill = []
 
-    # 返回总方案数
-    return dp[n][0] + dp[n][1]
+for i in range(90):
+    noskill.append(0)
+    firstskill.append(0)
+    secondskill.append(0)
 
-# 输入n
-n = int(input())
+days = int(input())
+for count in range(1,days+1):
+#    print(count)
+    if count == 1:
+        noskill[count] = 1
+        firstskill[count] = 1
+        secondskill[count] = 0
 
-# 输出方案数
-print(count_ways(n))
+    else:
+        noskill[count] = noskill[count-1] + secondskill[count-1]
+        firstskill[count] = noskill[count-1]
+        secondskill[count] = firstskill[count-1]
+#    print(noskill[count]+firstskill[count]+secondskill[count])
+
+#print(noskill[days])
+result = noskill[days] + secondskill[days]
+print(result)
