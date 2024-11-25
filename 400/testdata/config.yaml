@@ -1,5 +1,0 @@
-type: remote_judge
-subType: ybtbas
-target: ybtbas/P400
-time: 1000ms
-memory: 64MB
