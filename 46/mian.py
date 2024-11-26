@@ -1,5 +1,6 @@
 # BEGIN: 9ycj0n943x4
-c1, c2, c3, c4, c5 = 'C', 'h', 'i', 'n', 'a'
+list = list(input())
+c1, c2, c3, c4, c5 = list[0], list[1], list[2], list[3], list[4]
 c1 = chr(ord(c1) + 4)
 c2 = chr(ord(c2) + 4)
 c3 = chr(ord(c3) + 4)
