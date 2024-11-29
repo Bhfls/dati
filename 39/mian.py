@@ -1,6 +1,5 @@
 # BEGIN: 9ycj9s34x434
-dividend = int(input())
-divisor = int(input())
+dividend, divisor = map(int, input().split())
 
 quotient = dividend // divisor
 remainder = dividend % divisor

@@ -7,5 +7,5 @@ def print_triangle(char):
         print(char * (2 * i + 1), end='') 
         print(spaces, end='')
         print()
-input_char = input("请输入一个字符: ")
+input_char = input()
 print_triangle(input_char)

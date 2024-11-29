@@ -4,8 +4,8 @@ def calculate_discounted_price(original_price, discount_rate):
     rounded_price = round(discounted_price / 10) * 10
     return rounded_price
 
-original_price = int(input())
-discount_rate = float(input())
+original_price, discount_rate = map(float, input().split())
+original_price = int(original_price)
 
 discounted_price = calculate_discounted_price(original_price, discount_rate)
 print(int(discounted_price))

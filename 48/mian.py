@@ -8,4 +8,4 @@ total_money = int(input())
 
 # 计算并输出原有的钱数
 original_money = calculate_original_money(total_money)
-print("甲、乙、丙原有的钱数分别为：", original_money)
+print( original_money)
