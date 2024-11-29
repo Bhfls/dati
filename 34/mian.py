@@ -4,5 +4,5 @@ A, B, C = map(int, input().split())
 # 计算总成绩
 total_score = A * 0.2 + B * 0.3 + C * 0.5
 # 输出总成绩
-print(total_score)
+print(int(total_score))
 
