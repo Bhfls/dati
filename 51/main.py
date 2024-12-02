@@ -1,3 +1,3 @@
 a, b = map(float, input().split())
 r = a - int(a / b) * b
-print(r)
+print(f"{r:.2f}")
