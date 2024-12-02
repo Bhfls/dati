@@ -1,5 +1,5 @@
 def print_diamond(char):
-    size = 5
+    size = 3
     for i in range(size):
         spaces = " " * (size - i - 1)
         print(spaces, end="")
