@@ -1,21 +1,19 @@
-# BEGIN: 5ycj9s9j4f5e
-num = list(map(int, input().split()))
-for i in range(5):
-    num[i] = num[i] // 3
+# BEGIN: 9p4j3934k34
+# n = int(input())
+nums = list(map(int, input().split()))
+n = len(nums)
+for i in range(n):
+    nums[i] //= 3
     if i == 0:
-        num[4] += num[i]
-        num[1] += num[i]
-    elif i == 1:
-        num[0] += num[i]
-        num[2] += num[i]
-    elif i == 2:
-        num[1] += num[i]
-        num[3] += num[i]
-    elif i == 3:
-        num[2] += num[i]
-        num[4] += num[i]
-    elif i == 4:
-        num[3] += num[i]
-        num[0] += num[i]
-print(*num)
-# END: 5ycj9s9j4f5e
+        nums[n - 1] += nums[i]
+        nums[i + 1] += nums[i]
+    elif i == n - 1:
+        nums[i - 1] += nums[i]
+        nums[0] += nums[i]
+    else:
+        nums[i - 1] += nums[i]
+        nums[i + 1] += nums[i]
+
+for num in nums:
+    print('{:5d}'.format(num), end='')
+# END: 9p4j3934k34
