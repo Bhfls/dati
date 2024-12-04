@@ -7,5 +7,3 @@ while r > b:
 print(r)
 # 解决减法尾数溢出问题
 
-
-
