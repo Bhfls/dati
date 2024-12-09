@@ -1,2 +1,5 @@
 m = int(input())
-print(25 - m)
+r = 25 - m
+while r < 0:
+    r += 25
+print(r)
